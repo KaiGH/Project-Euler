@@ -2,11 +2,11 @@
 
 // This program finds the sun of all the natural numbers below 1000 that are multiples of 3 or 5. 
 
-namespace ConsoleApp
+namespace ProjectEuler
 {
-    class Program
+    class Problem001
     {
-        static void Main()
+        public static void Solution()
         {
             int number = 0;
 
@@ -21,10 +21,6 @@ namespace ConsoleApp
 
             // Print result
             Console.WriteLine(number);
-
-            // Keep the console open after task completion
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
 }
