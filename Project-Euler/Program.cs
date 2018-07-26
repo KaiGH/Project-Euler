@@ -10,28 +10,29 @@ namespace ProjectEuler
         {
             Console.WriteLine("Enter a number to run the Project Euler problem");
             Console.WriteLine("001 - Multiples of 3 and 5");
-
+            Console.WriteLine("002 - Even Fibonacci numbers");
             input();
         }
 
         static void input()
         {
             int UserInput = Convert.ToInt32(Console.ReadLine());
-            output(UserInput);
-        }
-
-        static void output(int UserInput)
-        {
-            if (UserInput < 2 && UserInput > 0)
+            if (UserInput < 3 && UserInput > 0)
             {
-                if (UserInput == 1) { Problem001.Solution(); }
-                input();
+                output(UserInput);
             }
             else
             {
                 Console.WriteLine("Invalid input. Please try again.");
                 input();
             }
+        }
+
+        static void output(int UserInput)
+        {
+            if (UserInput == 1) { Problem001.Solution(); }
+            if (UserInput == 2) { Problem002.Solution(); }
+            input();
         }
     }
 }
