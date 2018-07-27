@@ -12,30 +12,32 @@ namespace ProjectEuler
             Console.WriteLine("001 - Multiples of 3 and 5");
             Console.WriteLine("002 - Even Fibonacci numbers");
             Console.WriteLine("003 - Largest prime factor");
+
+            Console.WriteLine("005 - Smallest multiple");
             Console.WriteLine("0 to Exit");
-            
-            while (true)
+
+            switch (Convert.ToInt32(Console.ReadLine()))
             {
-                switch (Convert.ToInt32(Console.ReadLine()))
-                {
-                    case 1:
-                        Problem001.Solution();
-                        break;
-                    case 2:
-                        Problem002.Solution();
-                        break;
-                    case 3:
-                        Problem003.Solution();
-                        break;
-                    case 0:
-                        System.Environment.Exit(1);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input. Please try again.");
-                        Main();
-                        break;
-                }
+                case 1:
+                    Problem001.Solution();
+                    break;
+                case 2:
+                    Problem002.Solution();
+                    break;
+                case 3:
+                    Problem003.Solution();
+                    break;
+                case 5:
+                    Problem005.Solution();
+                    break;
+                case 0:
+                    System.Environment.Exit(1);
+                    break;
+                default:
+                    Console.WriteLine("Invalid input. Please try again.");
+                    break;
             }
+            Main();
         }
     }
 }
