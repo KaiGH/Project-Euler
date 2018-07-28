@@ -1,5 +1,5 @@
 # Project Euler
-![Statistics Badge](https://projecteuler.net/profile/KaiEuler.png)
+![Statistics Badge](https://projecteuler.net/profile/KaiEuler.png?)
 
 This repository contains my solutions to Project Euler problems. I have implemented my solutions in C# console applications which were developed in Visual Studio. Feel free to view and download the code and compare it to your own solutions. 
 
