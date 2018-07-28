@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 // This program finds the largest palindrome made from the product of two 3-digit numbers.
 
@@ -15,19 +16,21 @@ namespace ProjectEuler
                 // Second 3-digit number
                 for (int b = 999; b >= 100; b--)
                 {
-                    // Find product of numbers and convert to string
+                    // Find product of numbers and convert to char array
                     int c = a * b;
-                    string p = c.ToString();
+                    char[] p = c.ToString().ToCharArray();
+                    char[] pr = c.ToString().ToCharArray();
 
-                    // Check if product is 5 charaters and a palindrome number and is greater than current highest
-                    if (p.Length == 6 && p[0] == p[5] && p[1] == p[4] && p[2] == p[3] && c > h)
+                    // Reverse string and store in pr
+                    for (int i = 0; i < p.Length; i++)
+                    {
+                        pr[i] = p[(p.Length - 1) - i];
+                    }
+
+                    // Check if product is a palindrome number and is greater than current highest
+                    if (p.SequenceEqual(pr) && c > h)
                     {
                         // Store value and break
-                        h = c;
-                        break;
-                    }
-                    if (p.Length == 5 && p[0] == p[4] && p[1] == p[3] && c > h)
-                    {
                         h = c;
                         break;
                     }
