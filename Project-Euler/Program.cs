@@ -12,7 +12,7 @@ namespace ProjectEuler
             Console.WriteLine("001 - Multiples of 3 and 5");
             Console.WriteLine("002 - Even Fibonacci numbers");
             Console.WriteLine("003 - Largest prime factor");
-
+            Console.WriteLine("004 - Largest palindrome product");
             Console.WriteLine("005 - Smallest multiple");
             Console.WriteLine("0 to Exit");
 
@@ -26,6 +26,9 @@ namespace ProjectEuler
                     break;
                 case 3:
                     Problem003.Solution();
+                    break;
+                case 4:
+                    Problem004.Solution();
                     break;
                 case 5:
                     Problem005.Solution();
