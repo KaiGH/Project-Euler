@@ -12,3 +12,6 @@ Answer: 906609
 
 Problem 005 - Smallest multiple - https://projecteuler.net/problem=5
 Answer: 232792560
+
+Problem 006 - Sum square difference - https://projecteuler.net/problem=6
+Answer: 25164150

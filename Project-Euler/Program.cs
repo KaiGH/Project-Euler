@@ -14,6 +14,7 @@ namespace ProjectEuler
             Console.WriteLine("003 - Largest prime factor");
             Console.WriteLine("004 - Largest palindrome product");
             Console.WriteLine("005 - Smallest multiple");
+            Console.WriteLine("006 - Sum square difference");
             Console.WriteLine("0 to Exit");
 
             switch (Convert.ToInt32(Console.ReadLine()))
@@ -32,6 +33,9 @@ namespace ProjectEuler
                     break;
                 case 5:
                     Problem005.Solution();
+                    break;
+                case 6:
+                    Problem006.Solution();
                     break;
                 case 0:
                     System.Environment.Exit(1);
