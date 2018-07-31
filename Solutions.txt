@@ -18,3 +18,6 @@ Answer: 25164150
 
 Problem 007 - 10001st prime - https://projecteuler.net/problem=7
 Answer: 104743
+
+Problem 008 - Largest product in a series - https://projecteuler.net/problem=8
+Answer: 23514624000
