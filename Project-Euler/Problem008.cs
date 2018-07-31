@@ -18,7 +18,7 @@ namespace ProjectEuler
                 // Intialise variable and convert from ASCII to numerical number
                 Int64 n = (number[i] - 48);
 
-                // Multiplies 13 digits and catches out of bounds errors
+                // Multiplies 13 digits
                 for (int j = 1; j < 13; j++)
                 {
                     n *= (number[i + j] - 48);
