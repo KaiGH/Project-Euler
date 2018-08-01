@@ -17,6 +17,7 @@ namespace ProjectEuler
             Console.WriteLine("006 - Sum square difference");
             Console.WriteLine("007 - 10001st prime");
             Console.WriteLine("008 - Largest product in a series");
+            Console.WriteLine("010 - Summation of primes");
             Console.WriteLine("0 to Exit");
 
             switch (Convert.ToInt32(Console.ReadLine()))
@@ -44,6 +45,9 @@ namespace ProjectEuler
                     break;
                 case 8:
                     Problem008.Solution();
+                    break;
+                case 10:
+                    Problem010.Solution();
                     break;
                 case 0:
                     System.Environment.Exit(1);

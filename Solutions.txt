@@ -21,3 +21,6 @@ Answer: 104743
 
 Problem 008 - Largest product in a series - https://projecteuler.net/problem=8
 Answer: 23514624000
+
+Problem 010 - Summation of primes - https://projecteuler.net/problem=10
+Answer: 142913828922
